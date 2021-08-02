@@ -11,3 +11,10 @@ return DIGIT;
 int yywrap()
 {
 }
+
+/*
+Execution:
+flex parser.l
+yacc -d parser.y
+gcc lex.yy.c parser.tab.c -lm
+*/
