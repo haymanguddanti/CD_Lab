@@ -20,7 +20,6 @@ expr: expr '+' term {$$=$1 + $3 ;}
 term: term '*' factor {$$=$1 * $3 ;}
 | factor
 ; 
-20
 factor: '(' expr ')' {$$=$2 ;}
 | DIGIT
 ;
