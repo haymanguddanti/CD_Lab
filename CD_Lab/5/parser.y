@@ -29,6 +29,4 @@ int main()
 yyparse();
 }
 yyerror(char *s)
-{
-printf("%s",s);
-}
+{}
