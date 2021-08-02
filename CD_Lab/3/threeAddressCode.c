@@ -6,19 +6,6 @@ void plus();
 void div1();
 int i, ch, j, l, addr = 100;
 char ex[10], exp1[10], exp12[10], exp3[10], id1[5], op[5], id2[5];
-char *strrev(char *str)
-{
-    char *p1, *p2;
-    if (!str || !*str)
-        return str;
-    for (p1 = str, p2 = str + strlen(str) - 1; p2 > p1; ++p1, --p2)
-    {
-        *p1 ^= *p2;
-        *p2 ^= *p1;
-        *p1 ^= *p2;
-    }
-    return str;
-}
 int main()
 {
     while (1)
